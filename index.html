@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SCP Facility Simulator</title>
+
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-family: monospace;
+    }
+  </style>
+
+  <!-- 🔑 THIS FIXES THE ERROR -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="info">Click to lock mouse | WASD to move</div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
